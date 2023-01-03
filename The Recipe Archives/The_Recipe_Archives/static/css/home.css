@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: orange;
+}
+
+#nav {
+    height: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#regBtn {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+#logBtn {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.large-article-header {
+    background: url("https://source.unsplash.com/random/?food") no-repeat center;
+    background-size: cover;
+    height: 31.25rem;
+    position: relative;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .large-article-header {
+        height: 20.83333rem;
+    }
+}
+
+.large-article-header-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    bottom: 3.125rem;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .large-article-header-content {
+        bottom: 1.25rem;
+    }
+}
+
+.large-article-header-content .center-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .large-article-header-content .center-container {
+        width: 100%;
+        padding: 0 1.25rem;
+    }
+}
+
+.large-article-header-content .article-date {
+    color: #fefefe;
+}
+
+.large-article-header-content .article-title h1 {
+    line-height: 3.125rem;
+    color: #fefefe;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .large-article-header-content .article-title h1 {
+        line-height: 1.875rem;
+    }
+}
+
+.large-article-header-content .article-details {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.large-article-header-content .article-details a {
+    color: #fefefe;
+}
+
+.large-article-header-content .article-author {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.large-article-header-content .article-author img {
+    border-radius: 3.125rem;
+}
+
+.large-article-header-content .article-author a {
+    margin-left: 1rem;
+}
+
+
+.button-rounded-hover {
+    border: 0;
+    border-radius: 5000px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    transition: all 0.35s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.button-rounded-hover:before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: inherit;
+    background-color: #fefefe;
+    transition: all 0.3s;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.button-rounded-hover:after {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 5px solid #115b8d;
+    content: '';
+    border-radius: inherit;
+}
+
+.button-rounded-hover:hover,
+.button-rounded-hover:focus {
+    background-color: #115b8d;
+}
+
+.button-rounded-hover:hover:before,
+.button-rounded-hover:focus:before {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    opacity: 0.25;
+}
